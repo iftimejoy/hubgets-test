@@ -1,0 +1,88 @@
+// Article content
+.article__content {
+    background: $blue;
+    height: 32rem;
+    display: flex;
+    align-items: center;
+    .article__text {
+        color:white;
+        text-align: center;
+        h1 {
+            font-weight: 800;
+            margin: 0;
+            padding: 0 0 $s-size 0;
+        }
+        p{
+            margin: 0;
+            color: $light-Blue;
+            font-weight: 500;
+            padding-bottom: 0.6rem;
+        }
+    }
+}
+
+//Features facilities Hubgets
+ .content__article {
+    display: inline-flex;
+    flex-direction: column;
+    width: 46rem;
+    padding: 10rem $m-size 0 $s-size;
+    h4 {
+        text-transform: uppercase;
+        color: #fff;       
+    }
+    article {
+        text-decoration: none;
+        margin-bottom: $s-size;
+    }
+    &--features {
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: $m-size;
+        }
+        a {
+            text-decoration: none ;
+            color: $blue;
+            margin: $s-size 0;
+        }        
+
+    }
+    
+}
+
+.help {
+    display: inline-flex;
+    background-color: #f6f7f8;
+    padding: 3em 0;
+    font-size: $m-size;
+    img {
+      width: 15%;
+    }
+    div {
+    margin-left:$m-size  
+    }
+    a {
+        text-decoration: none;
+        color: $blue;
+    }
+}
+
+@media only screen and (max-width: $desktop-breakpoint) {
+    .content__article {
+        padding: 1rem 0 0 0;
+        display: flex;
+        justify-content:center ;
+        &--features {
+            display: block;
+            text-align: center;
+            img {
+                width: 105px;
+                justify-content: center;
+            }
+        }
+    }
+    .help{
+        justify-content: center;
+    }
+}
